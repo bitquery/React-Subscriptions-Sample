@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 
 import { groupBy, sumBy } from 'lodash';
 const TRANSFER_QUERY = gql`
-  query {
+  subscription {
   EVM {
     Transfers(limit: {count: 10}) {
       Transfer {
