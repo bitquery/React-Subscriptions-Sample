@@ -28,7 +28,7 @@ const TRANSFER_QUERY = gql`
 export function SubscriptionComponent() {
 
 
-  const { data, loading, error } = useQuery(TRANSFER_QUERY);
+  const { data, loading, error } = useSubscription(TRANSFER_QUERY);
 
   if (loading) {
     return <p>Loading...</p>;
